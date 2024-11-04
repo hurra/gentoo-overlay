@@ -1,7 +1,7 @@
 EAPI=7
 inherit desktop qmake-utils
 DESCRIPTION="Der kleine Brauhelfer ist ein Hilfsprogramm für Hobbybrauer zum Erstellen und Verwalten von Biersuden"
-HOMEPAGE="http://kleiner-brauhelfer.github.io/"
+HOMEPAGE="https://kleiner-brauhelfer.github.io/"
 
 if [[ ${PV} != 9999 ]]; then
 	SRC_URI="https://github.com/kleiner-brauhelfer/kleiner-brauhelfer-2/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
