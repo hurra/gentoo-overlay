@@ -4,16 +4,16 @@ DESCRIPTION="Water treatment calculator for brewing beer"
 HOMEPAGE="https://github.com/jo-hannes/Aqua-mixtura"
 
 if [[ ${PV} != 9999 ]]; then
-	SRC_URI="https://github.com/kleiner-brauhelfer/kleiner-brauhelfer-2/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
-	# TODO
+	SRC_URI="https://github.com/jo-hannes/Aqua-mixtura/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 else
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/jo-hannes/Aqua-mixtura.git"
+	EGIT_BRANCH="github-actions"
 fi
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64 x86"
+KEYWORDS="amd64 x86"
 IUSE=""
 
 DEPEND="
